@@ -1,7 +1,7 @@
 FROM docker.io/semaphoreui/semaphore:v2.17.26
 
 # renovate: datasource=pypi depName=ansible packageName=ansible versioning=semver
-ARG ANSIBLE_VERSION=11.1.0
+ARG ANSIBLE_VERSION=13.4.0
 ENV ANSIBLE_VERSION=${ANSIBLE_VERSION}
 ARG ANSIBLE_VENV_PATH=/opt/semaphore/apps/ansible/${ANSIBLE_VERSION}/venv
 
