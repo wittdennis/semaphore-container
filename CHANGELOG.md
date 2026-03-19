@@ -8,6 +8,21 @@ All notable changes to this project will be documented in this file. See [conven
 - (**deps**) update wittdennis/pipelines action to v1.13.25 - ([a6902c8](https://github.com/wittdennis/semaphore-container/commit/a6902c8283d79bd9f44bfd0365bcf0a2b8d80901)) - wittdennis-renovate[bot]
 - (**deps**) update softprops/action-gh-release action to v2.6.1 - ([12af8ca](https://github.com/wittdennis/semaphore-container/commit/12af8cad90ec3353f214e8122ba4b11dad864f41)) - wittdennis-renovate[bot]
 - (**deps**) add renovate.json - ([7379623](https://github.com/wittdennis/semaphore-container/commit/73796238ee51a08d5f31b076e9aee5d4fe42769b)) - wittdennis-renovate[bot]
+- (**version**) 2.17.26 - ([49a8812](https://github.com/wittdennis/semaphore-container/commit/49a88121be836530e32d6a5099d69957d35f77e6)) - github-actions
+- (**version**) 2.17.26 - ([02b6afa](https://github.com/wittdennis/semaphore-container/commit/02b6afa8f871d7d702dc31938164b1bc099ec64c)) - github-actions
+- try upgrading ansible - ([0f5ceff](https://github.com/wittdennis/semaphore-container/commit/0f5ceffce965a4ee77d042ff1475d6147f8a1b59)) - Dennis Witt
+- rewrite path to only include most recent ansible venv - ([1724d1f](https://github.com/wittdennis/semaphore-container/commit/1724d1fd7e23d339e11ce3e8dcfad5d5ff1b415e)) - Dennis Witt
+- update cocogitto action - ([78b22d9](https://github.com/wittdennis/semaphore-container/commit/78b22d91b5e0501b4a0bb6ae746b8810780d6114)) - Dennis Witt
+- initial commit - ([d828f3b](https://github.com/wittdennis/semaphore-container/commit/d828f3b4bfbf01c88fdd9d852be0203ef0eebaf2)) - Dennis Witt
+
+- - -
+
+## [2.17.26](https://github.com/wittdennis/semaphore-container/compare/d828f3b4bfbf01c88fdd9d852be0203ef0eebaf2..2.17.26) - 2026-03-19
+#### Miscellaneous Chores
+- (**deps**) update dependency ansible to v13 - ([780a20a](https://github.com/wittdennis/semaphore-container/commit/780a20a1b794459a842f3898cbc4a9a30f3fb310)) - wittdennis-renovate[bot]
+- (**deps**) update wittdennis/pipelines action to v1.13.25 - ([a6902c8](https://github.com/wittdennis/semaphore-container/commit/a6902c8283d79bd9f44bfd0365bcf0a2b8d80901)) - wittdennis-renovate[bot]
+- (**deps**) update softprops/action-gh-release action to v2.6.1 - ([12af8ca](https://github.com/wittdennis/semaphore-container/commit/12af8cad90ec3353f214e8122ba4b11dad864f41)) - wittdennis-renovate[bot]
+- (**deps**) add renovate.json - ([7379623](https://github.com/wittdennis/semaphore-container/commit/73796238ee51a08d5f31b076e9aee5d4fe42769b)) - wittdennis-renovate[bot]
 - (**version**) 2.17.26 - ([02b6afa](https://github.com/wittdennis/semaphore-container/commit/02b6afa8f871d7d702dc31938164b1bc099ec64c)) - github-actions
 - rewrite path to only include most recent ansible venv - ([1724d1f](https://github.com/wittdennis/semaphore-container/commit/1724d1fd7e23d339e11ce3e8dcfad5d5ff1b415e)) - Dennis Witt
 - update cocogitto action - ([78b22d9](https://github.com/wittdennis/semaphore-container/commit/78b22d91b5e0501b4a0bb6ae746b8810780d6114)) - Dennis Witt
