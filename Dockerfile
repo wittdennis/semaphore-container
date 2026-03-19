@@ -9,7 +9,9 @@ RUN mkdir -p ${ANSIBLE_VENV_PATH} && \
     python3 -m venv ${ANSIBLE_VENV_PATH} --system-site-packages && \
     source ${ANSIBLE_VENV_PATH}/bin/activate && \
     pip3 install --upgrade pip ansible==${ANSIBLE_VERSION} && \
-    find ${ANSIBLE_VENV_PATH} -iname __pycache__ | xargs rm -rf
+    find ${ANSIBLE_VENV_PATH} -iname __pycache__ | xargs rm -rf &&\
+    clean_path=$(echo "$PATH" | tr ':' '\n' | grep -v '/opt/semaphore/apps/ansible' | tr '\n' ':' | sed 's/:$//') && \
+    echo "PATH=${ANSIBLE_VENV_PATH}/bin:${clean_path}" >> /etc/environment
 
 ENV VIRTUAL_ENV="$ANSIBLE_VENV_PATH"
-ENV PATH="$ANSIBLE_VENV_PATH/bin:$PATH"
+ENV PATH="$ANSIBLE_VENV_PATH/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
