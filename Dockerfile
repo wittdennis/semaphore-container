@@ -1,4 +1,4 @@
-FROM docker.io/semaphoreui/semaphore:v2.17.26
+FROM docker.io/semaphoreui/semaphore:v2.17.27
 
 # renovate: datasource=pypi depName=ansible packageName=ansible versioning=semver
 ARG CURRENT_ANSIBLE_VERSION=13.4.0
