@@ -1,13 +1,25 @@
 name: publish-image
 
 on:
+  workflow_dispatch:
   release:
     types: published
 
 jobs:
   publish:
     uses: wittdennis/pipelines/.github/workflows/container-image-publish.yaml@4935fe307bbde00c895e19be00476904f61bbfa1 # 2.0.4
+    permissions:
+      contents: read
+      packages: write
     with:
       image-name: semaphore
+      registries: |
+        docker.io
+        ghcr.io
+      registry-namespaces: |
+        denniswitt
+        wittdennis
     secrets:
-      registry-password: ${{ secrets.DOCKER_REGISTRY_TOKEN }}
+      registry-passwords: |
+        ${{ secrets.DOCKER_REGISTRY_TOKEN }}
+        ${{ secrets.GITHUB_TOKEN }}
